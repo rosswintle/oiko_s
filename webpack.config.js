@@ -1,6 +1,7 @@
 var webpack = require('webpack');
 var path = require('path');
 var extractTextPlugin = require('extract-text-webpack-plugin');
+var LiveReloadPlugin = require('webpack-livereload-plugin');
 var inProduction = (process.env.NODE_ENV === 'production');
 
 module.exports = {
@@ -10,7 +11,7 @@ module.exports = {
 			'./src/js/main.js',
 			'./src/sass/style.scss'
 			]
-		},	
+		},
 	output: {
 		path: path.resolve( __dirname, './dist' ),
 		filename: 'bundle.js'
@@ -21,7 +22,7 @@ module.exports = {
 			{
 				test: /\.s[ac]ss$/,
 				use: extractTextPlugin.extract( {
-					use: [ 
+					use: [
 						{
 							loader: 'css-loader',
 							options: {
@@ -58,7 +59,8 @@ module.exports = {
 		new extractTextPlugin('style.css'),
 		new webpack.LoaderOptionsPlugin({
 			minimize: inProduction
-		})
+		}),
+		new LiveReloadPlugin()
 	]
 
 }
