@@ -1,7 +1,7 @@
 {
   "name": "we-are-tearfund",
   "version": "1.0.0",
-  "description": "Custom WordPress theme for We Are Tearfund",
+  "description": "Custom fork of SASSified _s WordPress starter theme at Nov 2017 with added Webpack",
   "main": "index.js",
   "scripts": {
     "build": "webpack --progress ",
@@ -9,8 +9,8 @@
     "watch": "npm run build -- --watch"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Ross Wintle/Oikos",
+  "license": "GPL2.0+",
   "private": true,
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
