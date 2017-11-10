@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package Ship_of_Fools
+ * @package oiko_s
  */
 
 get_header(); ?>

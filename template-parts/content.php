@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Ship_of_Fools
+ * @package oiko_s
  */
 
 ?>
@@ -20,7 +20,7 @@
 
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php ship_of_fools_posted_on(); ?>
+			<?php oiko_s_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php
 		endif; ?>
@@ -31,7 +31,7 @@
 			the_content( sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'ship-of-fools' ),
+					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'oiko_s' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -42,13 +42,13 @@
 			) );
 
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'ship-of-fools' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'oiko_s' ),
 				'after'  => '</div>',
 			) );
 		?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php ship_of_fools_entry_footer(); ?>
+		<?php oiko_s_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

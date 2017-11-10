@@ -2,7 +2,7 @@
 /**
  * Functions which enhance the theme by hooking into WordPress
  *
- * @package Ship_of_Fools
+ * @package oiko_s
  */
 
 /**
@@ -11,7 +11,7 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
-function ship_of_fools_body_classes( $classes ) {
+function oiko_s_body_classes( $classes ) {
 	// Adds a class of hfeed to non-singular pages.
 	if ( ! is_singular() ) {
 		$classes[] = 'hfeed';
@@ -19,14 +19,14 @@ function ship_of_fools_body_classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'ship_of_fools_body_classes' );
+add_filter( 'body_class', 'oiko_s_body_classes' );
 
 /**
  * Add a pingback url auto-discovery header for singularly identifiable articles.
  */
-function ship_of_fools_pingback_header() {
+function oiko_s_pingback_header() {
 	if ( is_singular() && pings_open() ) {
 		echo '<link rel="pingback" href="', esc_url( get_bloginfo( 'pingback_url' ) ), '">';
 	}
 }
-add_action( 'wp_head', 'ship_of_fools_pingback_header' );
+add_action( 'wp_head', 'oiko_s_pingback_header' );

@@ -8,33 +8,33 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package Ship_of_Fools
+ * @package oiko_s
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses ship_of_fools_header_style()
+ * @uses oiko_s_header_style()
  */
-function ship_of_fools_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'ship_of_fools_custom_header_args', array(
+function oiko_s_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'oiko_s_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'ship_of_fools_header_style',
+		'wp-head-callback'       => 'oiko_s_header_style',
 	) ) );
 }
-add_action( 'after_setup_theme', 'ship_of_fools_custom_header_setup' );
+add_action( 'after_setup_theme', 'oiko_s_custom_header_setup' );
 
-if ( ! function_exists( 'ship_of_fools_header_style' ) ) :
+if ( ! function_exists( 'oiko_s_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see ship_of_fools_custom_header_setup().
+	 * @see oiko_s_custom_header_setup().
 	 */
-	function ship_of_fools_header_style() {
+	function oiko_s_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*

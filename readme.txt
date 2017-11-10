@@ -1,4 +1,4 @@
-=== Ship of Fools ===
+=== oiko_s ===
 
 Contributors: automattic
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
@@ -9,11 +9,11 @@ Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A starter theme called Ship of Fools.
+A starter theme called oiko_s.
 
 == Description ==
 
-Custom theme: Ship of Fools, developed by Ross Wintle/Oikos Digital
+Custom theme: oiko_s, developed by Ross Wintle/Oikos Digital
 
 == Installation ==
 
@@ -25,7 +25,7 @@ Custom theme: Ship of Fools, developed by Ross Wintle/Oikos Digital
 
 = Does this theme support any plugins? =
 
-Ship of Fools includes support for Infinite Scroll in Jetpack.
+oiko_s includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 

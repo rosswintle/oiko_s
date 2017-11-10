@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package Ship_of_Fools
+ * @package oiko_s
  */
 
 /**
@@ -14,11 +14,11 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function ship_of_fools_jetpack_setup() {
+function oiko_s_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'main',
-		'render'    => 'ship_of_fools_infinite_scroll_render',
+		'render'    => 'oiko_s_infinite_scroll_render',
 		'footer'    => 'page',
 	) );
 
@@ -28,7 +28,7 @@ function ship_of_fools_jetpack_setup() {
 	// Add theme support for Content Options.
 	add_theme_support( 'jetpack-content-options', array(
 		'post-details' => array(
-			'stylesheet' => 'ship-of-fools-style',
+			'stylesheet' => 'oiko_s-style',
 			'date'       => '.posted-on',
 			'categories' => '.cat-links',
 			'tags'       => '.tags-links',
@@ -37,12 +37,12 @@ function ship_of_fools_jetpack_setup() {
 		),
 	) );
 }
-add_action( 'after_setup_theme', 'ship_of_fools_jetpack_setup' );
+add_action( 'after_setup_theme', 'oiko_s_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  */
-function ship_of_fools_infinite_scroll_render() {
+function oiko_s_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
 		if ( is_search() ) :
