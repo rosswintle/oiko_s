@@ -13,7 +13,7 @@
   "license": "GPL2.0+",
   "private": true,
   "dependencies": {
-    "bootstrap-sass": "^3.4.0",
+    "bootstrap-sass": "^3.4.1",
     "mozilla-doc-cookies": "^1.0.3"
   },
   "devDependencies": {
